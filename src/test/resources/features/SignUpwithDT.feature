@@ -1,4 +1,4 @@
-#Author: teamMann
+#Author: @GigiteamMann
 Feature: SignUpWithDT
 
   Scenario: Sign Up to the FreeCRM
