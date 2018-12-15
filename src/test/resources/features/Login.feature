@@ -10,7 +10,8 @@ Feature: LoginFeature
     And I click login button
     Then I successfully logged in
     And I quit browser
-
+#Author GIGI
+ 
   Scenario Outline: Invaild Login
     
     Validating invalid login with invalid username and invaild password
