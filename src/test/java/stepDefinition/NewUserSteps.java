@@ -76,9 +76,9 @@ public class NewUserSteps extends BaseClass {
 		Assert.assertTrue(confirm);
 	}
 
-	@Then("^I will quit browser$")
-	public void i_will_quit_browser() throws Throwable {
-		driver.quit();
+	@Then("^I close browser$")
+	public void i_close_browser() throws Throwable {
+		driver.close();
 	}
 
 }

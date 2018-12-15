@@ -2,6 +2,7 @@ package stepDefinition;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -13,12 +14,16 @@ import cucumber.api.java.en.Then;
 import testUtils.BaseClass;
 
 public class SignUpSteps extends BaseClass {
-
+	// list a collection of objects
 	@Given("^I provide the following details$")
 	public void i_provide_the_following_details(DataTable SignTable) throws InterruptedException {
 		List<Map<String, String>> maps = SignTable.asMaps(String.class, String.class);
 
 		for (Map<String, String> map : maps) {
+
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+			driver.findElement(By.linkText("Sign Up")).click();
 
 			WebElement dropdown = driver.findElement(By.xpath("//select[@class='form-control input-text']"));
 			Select obj = new Select(dropdown);
@@ -45,4 +50,5 @@ public class SignUpSteps extends BaseClass {
 		}
 
 	}
+
 }

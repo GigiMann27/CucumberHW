@@ -1,3 +1,4 @@
+#Author: your.email@your.domain.com
 Feature: Create an new Account
 
   Scenario: Successfully create new account
@@ -12,4 +13,4 @@ Feature: Create an new Account
     And I fill in company name "Testing1" and Phone Number "7032222222"
     And I click on continue
     Then I have successfully created new user
-    Then I will quit browser
+    Then I close browser

@@ -1,4 +1,4 @@
-#gmann0827@gmail.com
+#Author: your.email@your.domain.com
 Feature: LoginFeature
 
   Scenario: Vaild Login
@@ -10,8 +10,8 @@ Feature: LoginFeature
     And I click login button
     Then I successfully logged in
     And I quit browser
-#Author GIGI
- 
+
+  #Author GIGI
   Scenario Outline: Invaild Login
     
     Validating invalid login with invalid username and invaild password
